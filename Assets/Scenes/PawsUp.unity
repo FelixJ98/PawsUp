@@ -544,8 +544,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectionSurfaceType: 1
-  overlayType: 2
-  compositionDepth: 0
+  overlayType: 1
+  compositionDepth: -100
   hidden: 0
   overridePerLayerColorScaleAndOffset: 0
   colorScale: {x: 1, y: 1, z: 1, w: 1}
@@ -630,7 +630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 831277181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &105632331
 GameObject:
@@ -702,7 +702,8 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: e6ad6c707947133498f5ee801dc24543, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -740,7 +741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106171676}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
@@ -3987,6 +3988,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1523811438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &831277181 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5747527815271769385, guid: f250bd402c864204c9ff7d462dbe161c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7157848075472444605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &831764219
 GameObject:
   m_ObjectHideFlags: 0
@@ -9739,6 +9746,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 719382679408210151, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_Cameras.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 719382679408210151, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_Cameras.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 719382679408210151, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_VolumeLayerMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5747527815271769385, guid: f250bd402c864204c9ff7d462dbe161c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9802,11 +9824,35 @@ PrefabInstance:
     - target: {fileID: 7967014050219067448, guid: f250bd402c864204c9ff7d462dbe161c,
         type: 3}
       propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967014050219067448, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967014050219067448, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967014050219067448, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967014050219067448, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5747527815271769385, guid: f250bd402c864204c9ff7d462dbe161c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 92665131}
     - targetCorrespondingSourceObject: {fileID: 7335620196989890488, guid: f250bd402c864204c9ff7d462dbe161c,
         type: 3}
       insertIndex: -1
@@ -9825,5 +9871,4 @@ SceneRoots:
   - {fileID: 1875126494}
   - {fileID: 1782372480}
   - {fileID: 3310520849961010812}
-  - {fileID: 92665131}
   - {fileID: 106171679}
