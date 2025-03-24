@@ -2514,6 +2514,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 221536333}
     m_Modifications:
+    - target: {fileID: 2947139415554580577, guid: 84b48da395daf1d4eac1caef511f06df,
+        type: 3}
+      propertyPath: NextSceneName
+      value: TestScene
+      objectReference: {fileID: 0}
     - target: {fileID: 4369803865064911367, guid: 84b48da395daf1d4eac1caef511f06df,
         type: 3}
       propertyPath: m_Name
@@ -10449,7 +10454,9 @@ MonoBehaviour:
   Fix_Obj_Spawning: 0
   targetSpawners: []
   yAdjust: 1.5
-  object_Without_Tag: Capsules
+  hands:
+  - {fileID: 1748387611}
+  - {fileID: 1005517760}
 --- !u!4 &2052329570
 Transform:
   m_ObjectHideFlags: 0
