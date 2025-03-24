@@ -25,5 +25,9 @@ public class SceneChanger : MonoBehaviour
             Debug.Log("identified player");
             SceneManager.LoadScene(NextSceneName);
         }
+        else
+        {
+            Debug.Log("identified extraterestrials of tag" + other.tag + " and of name: " + other.name);
+        }
     }
 }

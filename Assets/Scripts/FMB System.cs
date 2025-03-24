@@ -10,6 +10,8 @@ public class FMBSystem : MonoBehaviour
     public bool Fix_Obj_Spawning = false;
     public List<GameObject> targetSpawners = new List<GameObject>();
     public float yAdjust = 1.5f;
+    [Header("Player Fixes")]
+    public string object_Without_Tag = "Capsules";
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class FMBSystem : MonoBehaviour
     {
         floorFixer();
         spawnFixer();
+        playerFixes();
     }
 
     void floorFixer()
@@ -55,6 +58,29 @@ public class FMBSystem : MonoBehaviour
                     Fix_Obj_Spawning = false;
                 }
             }
+        }
+    }
+
+    void playerFixes()
+    {
+        Debug.Log("RUNNING");
+        if (GameObject.Find(object_Without_Tag) != null)
+         {
+            Debug.Log("ENTERED");
+            ChangeTagsRecursively(GameObject.Find(object_Without_Tag), "Player");
+        }
+    }
+
+    void ChangeTagsRecursively(GameObject obj, string tag)
+    {
+        Debug.Log("FOUND");
+        // Change the tag of the current GameObject
+        obj.tag = tag;
+
+        // Iterate through each child and recursively change their tags
+        foreach (Transform child in obj.transform)
+        {
+            ChangeTagsRecursively(child.gameObject, tag);
         }
     }
 }
