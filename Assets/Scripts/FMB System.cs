@@ -88,7 +88,6 @@ public class FMBSystem : MonoBehaviour
             Debug.LogError("No Capsules found!");
         }
     }
-
     void ChangeTagsRecursively(GameObject obj, string tag)
     {
         Debug.Log("FOUND");
