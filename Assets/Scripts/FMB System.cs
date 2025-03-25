@@ -11,7 +11,7 @@ public class FMBSystem : MonoBehaviour
     public List<GameObject> targetSpawners = new List<GameObject>();
     public float yAdjust = 1.5f;
     [Header("Player Fixes")]
-    public string object_Without_Tag = "Capsules";
+    public GameObject[] hands;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,13 +64,30 @@ public class FMBSystem : MonoBehaviour
     void playerFixes()
     {
         Debug.Log("RUNNING");
-        if (GameObject.Find(object_Without_Tag) != null)
-         {
-            Debug.Log("ENTERED");
-            ChangeTagsRecursively(GameObject.Find(object_Without_Tag), "Player");
+
+        if (hands.Length > 0)
+        {
+
+            foreach (GameObject hand in hands)
+            {
+                foreach (Transform child in hand.transform)
+                {
+                    if (child.name == "Capsules") // Check if the child's name matches "Capsule"
+                    {
+                        Debug.Log("Changing tag for: " + child.name);
+                        child.gameObject.tag = "Player";
+
+                        // If the Capsule has children, recursively change their tags
+                        ChangeTagsRecursively(child.gameObject, "Player");
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("No Capsules found!");
         }
     }
-
     void ChangeTagsRecursively(GameObject obj, string tag)
     {
         Debug.Log("FOUND");
