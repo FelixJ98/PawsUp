@@ -5,17 +5,23 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FullTransparency.unity
     guid: 30232afdd538afd4e84cea6db54f2e2c
   - enabled: 1
-    path: Assets/Scenes/PawsUp.unity
+    path: Assets/PawsUp.unity
     guid: 672df9033bc54c844aad834396febf4b
+  - enabled: 1
+    path: Assets/Scenes/main-menu.unity
+    guid: 254eb4d69e2ef46e5ac24ae9826467eb
+  - enabled: 1
+    path: Assets/Scenes/testing.unity
+    guid: 6bfba12386f6842da83244a0d562c89d
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 54e846825d178f546a23c8e11f294579,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4c89bb4bae30f4a2ba94ea0bd24ef76d,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8d86f5225bad87941ad844beb190c569,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 30d384895839d4d8aa175e76b809758c,
       type: 2}
