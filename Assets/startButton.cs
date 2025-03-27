@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     public SpriteRenderer[] spritesToFade; // Assign your sprites (like "pawsup") in Inspector
     public float fadeDuration = 1f; // Time for fade effect
     public string sceneToLoad = "testing"; // Scene name
-
+    public ParticleSystem[] confettiSystems; // Assign both confetti systems in Inspector
 
 
     public void StartSceneTransition()
@@ -18,6 +18,13 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator FadeAndLoadScene()
     {
+        foreach (var confetti in confettiSystems)
+        {
+            if (confetti != null)
+            {
+                confetti.Play();
+            }
+        }
         float elapsedTime = 0;
 
         while (elapsedTime < fadeDuration)
@@ -38,6 +45,8 @@ public class SceneLoader : MonoBehaviour
         }
 
         // Load the new scene
+        yield return new WaitForSeconds(0.5f); // Adjust delay as needed
+
         SceneManager.LoadScene(sceneToLoad);
     }
 }
