@@ -11791,10 +11791,10 @@ MonoBehaviour:
   SpawnObject: {fileID: 4773929967702310423, guid: c5dfb5c2b62be7644bbb9162ee52a033,
     type: 3}
   SpawnAmount: 1
-  MaxIterations: 1000
+  MaxIterations: 10000
   SpawnLocations: 3
   Labels: 8
-  CheckOverlaps: 1
+  CheckOverlaps: 0
   OverrideBounds: -1
   LayerMask:
     serializedVersion: 2
@@ -21080,26 +21080,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3014632965476254764, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: m_MaskInteraction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3014632965476254764, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: m_RenderAlignment
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3014632965476254764, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3014632965476254764, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: m_UseCustomVertexStreams
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4773929967702310423, guid: c5dfb5c2b62be7644bbb9162ee52a033,
         type: 3}
       propertyPath: m_Name
@@ -21108,16 +21088,6 @@ PrefabInstance:
     - target: {fileID: 4773929967702310423, guid: c5dfb5c2b62be7644bbb9162ee52a033,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148025671805214632, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: autoRandomSeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148025671805214632, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: moveWithTransform
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5263503654388540589, guid: c5dfb5c2b62be7644bbb9162ee52a033,
@@ -21133,7 +21103,7 @@ PrefabInstance:
     - target: {fileID: 5263503654388540589, guid: c5dfb5c2b62be7644bbb9162ee52a033,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5263503654388540589, guid: c5dfb5c2b62be7644bbb9162ee52a033,
         type: 3}
@@ -21169,11 +21139,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7141110987666200932, guid: c5dfb5c2b62be7644bbb9162ee52a033,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
