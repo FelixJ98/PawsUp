@@ -45,7 +45,7 @@ public class SceneLoader : MonoBehaviour
         }
 
         // Load the new scene
-        yield return new WaitForSeconds(0.5f); // Adjust delay as needed
+        yield return new WaitForSeconds(1.5f); // Adjust delay as needed
 
         SceneManager.LoadScene(sceneToLoad);
     }
