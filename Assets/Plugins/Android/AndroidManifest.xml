@@ -12,15 +12,23 @@
     <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="false" />
     <meta-data android:name="com.samsung.android.vr.application.mode" android:value="vr_only" />
     <meta-data android:name="com.oculus.ossplash.background" android:value="passthrough-contextual" />
+<<<<<<< HEAD
     <meta-data android:name="com.oculus.telemetry.project_guid" android:value="afd0ecc2-c92c-419c-9d12-52d35b54a77d" />
     <meta-data android:name="com.oculus.supportedDevices" android:value="quest|quest2|questpro|quest3|quest3s" />
     <meta-data android:name="com.oculus.handtracking.frequency" android:value="LOW" />
     <meta-data android:name="com.oculus.handtracking.version" android:value="V2.0" />
+=======
+    <meta-data android:name="com.oculus.telemetry.project_guid" android:value="a7d80b8a-915c-4b9e-b915-2fb069c83272" />
+    <meta-data android:name="com.oculus.supportedDevices" android:value="quest|quest2|questpro|quest3|quest3s" />
+>>>>>>> main-menu
   </application>
   <uses-feature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true" />
   <uses-permission android:name="com.oculus.permission.USE_ANCHOR_API" />
   <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="false" />
   <uses-permission android:name="com.oculus.permission.USE_SCENE" />
+<<<<<<< HEAD
   <uses-feature android:name="oculus.software.handtracking" android:required="false" />
   <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+=======
+>>>>>>> main-menu
 </manifest>
