@@ -6,43 +6,43 @@ using TMPro;
 
 public class TimerScript : MonoBehaviour
 {
-    public float TimeLeft;
-    public bool TimerOn = false;
+    private float _timer = 10f;
+    public bool timerOn = false;
 
-    public TMP_Text TimerTxt;
+    public TMP_Text timerTxt;
 
     // Start is called before the first frame update
     void Start()
     {
-        TimerOn = true;
+        timerOn = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (TimerOn)
+        if (timerOn)
         {
-            if(TimeLeft > 0)
+            if(_timer >= 0f)
             {
-                TimeLeft -= Time.deltaTime;
-                updateTimer(TimeLeft);
+                _timer -= Time.deltaTime;
+                UpdateTimer(_timer);
             }
             else
             {
                 Debug.Log("Time is UP!");
-                TimeLeft = 0;
-                TimerOn = false;
+                _timer = 0;
+                timerOn = false;
             }
         }
     }
 
-    void updateTimer(float currentTime)
+    void UpdateTimer(float currentTime)
     { currentTime += 1;
 
         currentTime = Mathf.Max(0, currentTime);
         float minutes = Mathf.FloorToInt(currentTime / 60);
         float seconds = Mathf.FloorToInt(currentTime % 60);
 
-        TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
