@@ -162,8 +162,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
     "com.unity.inputsystem": {
       "version": "1.7.0",
       "depth": 1,
@@ -173,7 +171,6 @@
       },
       "url": "https://packages.unity.com"
     },
->>>>>>> main-menu
     "com.unity.mathematics": {
       "version": "1.2.6",
       "depth": 1,
@@ -286,8 +283,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
     "com.unity.xr.core-utils": {
       "version": "2.3.0",
       "depth": 1,
@@ -313,7 +308,6 @@
       },
       "url": "https://packages.unity.com"
     },
->>>>>>> main-menu
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.10",
       "depth": 1,
