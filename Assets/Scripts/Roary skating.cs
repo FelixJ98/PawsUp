@@ -27,7 +27,8 @@ public class RoaryController : MonoBehaviour
 
     IEnumerator SkateAtoB()
     {
-        animator.Play("SkateAtoB"); // play A → B animation
+        Debug.Log("SkateAtoB");
+        animator.Play("Roary"); // play A → B animation
         yield return new WaitForSeconds(skateAtoBDuration);
 
         roarySkate.SetActive(false);
@@ -46,13 +47,14 @@ public class RoaryController : MonoBehaviour
 
     IEnumerator InteractAndSkateBtoC()
     {
+        Debug.Log("InteractAndSkateBtoC");
         roaryTPose.SetActive(false);
         fireworks.Play();
 
         yield return new WaitForSeconds(1f); // fireworks moment
 
         roarySkate.SetActive(true);
-        animator.Play("SkateBtoC");
+        animator.Play("Roary");
         yield return new WaitForSeconds(skateBtoCDuration);
 
         roarySkate.SetActive(false);
