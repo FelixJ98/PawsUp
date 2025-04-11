@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Mime;
+
+
 using TMPro;
 using UnityEngine;
 
 public class GLScript : MonoBehaviour
 {
     [SerializeField] private TextMeshPro script;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,4 +26,4 @@ public class GLScript : MonoBehaviour
         }
     }
 }
-    
+
