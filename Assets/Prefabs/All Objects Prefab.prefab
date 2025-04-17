@@ -74,7 +74,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294966362
+    rgba: 4292198656
   m_fontColor: {r: 0, g: 0.75686276, b: 0.8352941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294966362
+    rgba: 4292198656
   m_fontColor: {r: 0, g: 0.75686276, b: 0.8352941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1334,10 +1334,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2113157132587770732, guid: 015b1542b5fd02445a150591bde5ecb8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcca78e021d30af489851e7d20409774, type: 2}
     - target: {fileID: 5623923104889234714, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
       propertyPath: m_RenderingLayerMask
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848063610156505044, guid: 015b1542b5fd02445a150591bde5ecb8,
+        type: 3}
+      propertyPath: NextSceneName
+      value: GC PhotoSphr
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1433,6 +1443,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8829696050522997338, guid: c5dfb5c2b62be7644bbb9162ee52a033,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a20de5e99579f80479935cd5802df178, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

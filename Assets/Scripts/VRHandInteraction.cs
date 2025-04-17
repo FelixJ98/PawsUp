@@ -66,7 +66,7 @@ public class VRHandInteraction : MonoBehaviour
         if (!counting)
         {
             counting = true;
-            if (count < 5)
+            if (count < 3)
             {
                 yield return new WaitForSeconds(1);
                 Debug.Log(count);
