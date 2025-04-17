@@ -51,6 +51,15 @@ public class TextAnimator : MonoBehaviour
         for(int i = 0; i < itemInfo[currentDisplayingText].Length + 1; i++) {
             itemInfoText.text = itemInfo[currentDisplayingText].Substring(0, i);
             yield return new WaitForSeconds(revealSpeed);
+            //Debug.Log("curr index: " + i + " curr char: " + itemInfo[currentDisplayingText][i] + " (len = " + itemInfo[currentDisplayingText].Length + " )");
+            if(i >= 1 && i < itemInfo[currentDisplayingText].Length - 2) {
+                char curr = itemInfo[currentDisplayingText][i-1];
+                if(curr == '.') {
+                    yield return new WaitForSeconds(0.8f);
+                } else if (curr == ',') {
+                    yield return new WaitForSeconds(0.4f);
+                }
+            }
         }
     }
 
