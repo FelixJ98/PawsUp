@@ -7,13 +7,13 @@ public class PhotoSphereUpdater : MonoBehaviour
     public Material[] photoSpheres;
     public GameObject photoSphere;
     public bool forward = true;
-    public int cIndex = 0;
+    public static int cIndex = 0;
     [SerializeField] private Collider collider;
     private bool resetRunning = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cIndex = 0;
     }
 
     // Update is called once per frame
