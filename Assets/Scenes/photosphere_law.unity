@@ -1359,7 +1359,7 @@ MonoBehaviour:
   _lutWeight: 1
   _flipLutY: 1
   serializedSurfaceGeometry:
-  - meshFilter: {fileID: 0}
+  - meshFilter: {fileID: 957099042}
     updateTransform: 0
   textureOpacity_: 1
   edgeRenderingEnabled_: 0
@@ -15903,7 +15903,7 @@ PrefabInstance:
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 0.7500003
       objectReference: {fileID: 0}
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
@@ -15913,7 +15913,7 @@ PrefabInstance:
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 0.7500003
       objectReference: {fileID: 0}
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
@@ -15938,7 +15938,7 @@ PrefabInstance:
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
@@ -15948,7 +15948,7 @@ PrefabInstance:
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1275548787833514263, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
@@ -15993,6 +15993,12 @@ PrefabInstance:
 --- !u!1 &957099041 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 342346596007442514, guid: 015b1542b5fd02445a150591bde5ecb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 957099040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &957099042 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 7355285603796176, guid: 015b1542b5fd02445a150591bde5ecb8,
     type: 3}
   m_PrefabInstance: {fileID: 957099040}
   m_PrefabAsset: {fileID: 0}
@@ -34742,8 +34748,8 @@ SceneRoots:
   - {fileID: 1591694906}
   - {fileID: 2111651394}
   - {fileID: 1040292187}
-  - {fileID: 227790081}
   - {fileID: 957099040}
+  - {fileID: 227790081}
   - {fileID: 656433060}
   - {fileID: 73610566}
   - {fileID: 978733901}
