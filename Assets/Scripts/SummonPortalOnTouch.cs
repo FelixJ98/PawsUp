@@ -7,6 +7,8 @@ public class SummonPortalOnTouch : MonoBehaviour
 {
     [SerializeField] private GameObject portalObject;
 
+    private Coroutine closePortalCoroutine;
+
  
     private void OnTriggerStay(Collider other)
     {
@@ -27,8 +29,13 @@ public class SummonPortalOnTouch : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
-        portalObject.SetActive(false);
+        closePortalCoroutine = StartCoroutine(DeactivatePortalDelay(3f));
+    }
 
+    private IEnumerator DeactivatePortalDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        portalObject.SetActive(false);
     }
 
 }
