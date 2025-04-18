@@ -21201,6 +21201,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 330813760690087977, guid: 0f9fcb6473d4f8f4785728d66c09fa7f,
+        type: 3}
+      propertyPath: NextSceneName
+      value: photosphere_law
+      objectReference: {fileID: 0}
     - target: {fileID: 4715083620956195320, guid: 0f9fcb6473d4f8f4785728d66c09fa7f,
         type: 3}
       propertyPath: m_LocalPosition.x
