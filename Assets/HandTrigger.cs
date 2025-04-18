@@ -6,10 +6,14 @@ public class HandTrigger : MonoBehaviour
 {
     public GameObject dialogBoxPrefab;
     //private GameObject activeDialog;
+    //private EventSystem eventSystem;
+    //pointerEventData = new PointerEventData(eventSystem);
     
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name.Contains("Hand"))
+        Debug.Log(other.gameObject);
+        //if (other.gameObject.name.Contains("Hand"))
+        if (other.gameObject.CompareTag("Player"))
         {
             if(dialogBoxPrefab == null) {
                 Debug.Log("Dialog box null check");
@@ -20,10 +24,19 @@ public class HandTrigger : MonoBehaviour
                 dialogBoxPrefab.SetActive(true);
             }
         }
+
+        //pointerEventData = new PointerEventData(eventSystem);
+
     }
 
     void OnTriggerExit(Collider other)
     {
         dialogBoxPrefab.SetActive(false);
     }
+
+    // private void SimulateMouse() {
+    //     pointerEventData.position = this.gameObject.transform.position;
+
+        
+    // }
 }
