@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GC PhotoSphr.unity
     guid: e3ffc17c33dfa7145a3e11262a120cc1
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 54e846825d178f546a23c8e11f294579,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3ede02d2f07f277429a7837e917049e3,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8d86f5225bad87941ad844beb190c569,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d27a59cb81788164fa947107cb112654,
       type: 2}
