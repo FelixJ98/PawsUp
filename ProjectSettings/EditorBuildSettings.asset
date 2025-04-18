@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/FullTransparency.unity
-    guid: 30232afdd538afd4e84cea6db54f2e2c
+    path: Assets/Scenes/main-menu.unity
+    guid: 254eb4d69e2ef46e5ac24ae9826467eb
   - enabled: 1
-    path: Assets/PawsUp.unity
-    guid: 672df9033bc54c844aad834396febf4b
+    path: Assets/Scenes/FirstWorld.unity
+    guid: f6492644980fba841928a393732ec7db
+  - enabled: 1
+    path: Assets/Scenes/GL PhotoSphr.unity
+    guid: 56dea06d672ace8479c7c97265678762
+  - enabled: 1
+    path: Assets/Scenes/GC PhotoSphr.unity
+    guid: e3ffc17c33dfa7145a3e11262a120cc1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3ede02d2f07f277429a7837e917049e3,
       type: 2}
