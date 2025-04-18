@@ -9,7 +9,7 @@ public class HandTrigger : MonoBehaviour
     
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name.Contains("Hand"))
+        //if (other.gameObject.name.Contains("Hand"))
         {
             if(dialogBoxPrefab == null) {
                 Debug.Log("Dialog box null check");
