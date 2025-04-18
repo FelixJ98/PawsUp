@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294966362
+    rgba: 4292198656
   m_fontColor: {r: 0, g: 0.75686276, b: 0.8352941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294966362
+    rgba: 4292198656
   m_fontColor: {r: 0, g: 0.75686276, b: 0.8352941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2521,6 +2521,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2113157132587770732, guid: 015b1542b5fd02445a150591bde5ecb8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb75dc2ab651ca241af5a16fb99a9fe8, type: 2}
     - target: {fileID: 5623923104889234714, guid: 015b1542b5fd02445a150591bde5ecb8,
         type: 3}
       propertyPath: m_RenderingLayerMask
