@@ -20319,7 +20319,8 @@ PrefabInstance:
     - target: {fileID: 3419300850213718268, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: Hypothetically, right, if you were judging a case argued by an AI Lawyer...
+        would you charge it with perjury if it hallucinates?
       objectReference: {fileID: 0}
     - target: {fileID: 3419300850213718268, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
@@ -20410,6 +20411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420446652538199988, guid: 2bdcc55930bdf324b93354187748dd13,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8420446652538199988, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
@@ -24815,7 +24821,8 @@ PrefabInstance:
     - target: {fileID: 3419300850213718268, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: Believe it or not, computer science majors can work in patent law, too,
+        not just software engineering!
       objectReference: {fileID: 0}
     - target: {fileID: 3419300850213718268, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
@@ -24901,6 +24908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420446652538199988, guid: 2bdcc55930bdf324b93354187748dd13,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8420446652538199988, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
@@ -46613,7 +46625,8 @@ PrefabInstance:
     - target: {fileID: 3419300850213718268, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: PG6 isn't the only place on campus! The law building, in fact, does
+        exist. Even the classrooms are shaped like courtrooms!
       objectReference: {fileID: 0}
     - target: {fileID: 3419300850213718268, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
@@ -46704,6 +46717,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420446652538199988, guid: 2bdcc55930bdf324b93354187748dd13,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8420446652538199988, guid: 2bdcc55930bdf324b93354187748dd13,
         type: 3}
