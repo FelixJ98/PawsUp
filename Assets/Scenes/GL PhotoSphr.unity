@@ -4962,17 +4962,17 @@ PrefabInstance:
     - target: {fileID: 2358629345944267330, guid: 5bc95809985d92644965350a3789a551,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2358629345944267330, guid: 5bc95809985d92644965350a3789a551,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2358629345944267330, guid: 5bc95809985d92644965350a3789a551,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2358629345944267330, guid: 5bc95809985d92644965350a3789a551,
         type: 3}
@@ -5037,8 +5037,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 226034606311203208, guid: 5bc95809985d92644965350a3789a551,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 260746997}
   m_SourcePrefab: {fileID: 100100000, guid: 5bc95809985d92644965350a3789a551, type: 3}
+--- !u!1 &260746996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 226034606311203208, guid: 5bc95809985d92644965350a3789a551,
+    type: 3}
+  m_PrefabInstance: {fileID: 260746995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &260746997
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260746996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57f06513ef39ec240ba90bb4fdad5bbe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &260979588
 GameObject:
   m_ObjectHideFlags: 0
