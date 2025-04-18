@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class LabelsFollowYou : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Transform mainCamera;
+
     void Start()
     {
-        
+        if (Camera.main != null)
+            mainCamera = Camera.main.transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (mainCamera == null) return;
+
+        foreach (Transform child in transform)
+        {
+            Vector3 lookDirection = mainCamera.position - child.position;
+            lookDirection.y = 0;
+
+            if (lookDirection != Vector3.zero)
+                child.rotation = Quaternion.LookRotation(lookDirection);
+        }
     }
 }
